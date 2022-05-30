@@ -34,6 +34,7 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className='item__label';
+    deleteButtonImg.className='btn__img';
 
     listItem.className = 'list__item';
     checkBox.className = 'item__input_checkbox';
