@@ -89,6 +89,7 @@ body {
   text-transform: uppercase;
 }
 
+.section-add-task__input,
 .item__input_text {
   margin: 0;
   font-size: 18px;
