@@ -14,7 +14,7 @@ button{
 }
 
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -54,16 +54,16 @@ body {
 }
 
 .section-add-task__input,
-.item__label,
-.item__input_text {
+.list__label,
+.list__input_text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
 .section-add-task__btn,
-.item__btn_edit,
-.item__btn_delete {
+.list__btn,
+.list__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -74,8 +74,8 @@ body {
 }
 
 .section-add-task__btn:hover,
-.item__btn_edit:hover,
-.item__btn_delete:hover {
+.list__btn:hover,
+.list__btn:hover {
   color: #ddc6c6;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .section-add-task__input,
-.item__input_text {
+.list__input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -105,7 +105,7 @@ body {
   color: #888;
 }
 
-.item__input_text:focus {
+.list__input_text:focus {
   color: #333;
 }
 
@@ -134,47 +134,47 @@ body {
   vertical-align: middle;
 }
 
-.item__input_checkbox {
+.list__input_checkbox {
   margin: 0 10px;
 }
 
-.list__item > .item__label {
+.list__item > .list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list__item > .item__input_text {
+.list__item > .list__input_text {
   width: 226px;
 }
 
-.item__btn_delete .btn__img {
+.list__btn .list__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.item__btn_delete .btn__img:hover {
+.list__btn .list__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list_completed-tasks .item__label {
+.list_completed-tasks .list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .list__item .item__input_text {
+.list .list__item .list__input_text {
   display: none;
 }
 
-.list .list__item_edit-mode .item__input_text {
+.list .list__item_edit-mode .list__input_text {
   display: inline-block;
   width: 224px;
 }
 
-.list .list__item_edit-mode .item__label {
+.list .list__item_edit-mode .list__label {
   display: none;
 }
