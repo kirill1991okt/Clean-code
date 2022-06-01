@@ -53,7 +53,9 @@ body {
   display: flex;
 }
 
-.section-add-task__input {
+.section-add-task__input,
+.item__label,
+.item__input_text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
